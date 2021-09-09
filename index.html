@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title> LOGIN AND REGISTRATION FORM  </title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="hero">
+          <div class="form-box">
+             <div class ="button-box">
+                 <div  id="btn">       </div>
+                 <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                 <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+                </div>
+                <div class="social-icons"> 
+                    <img src="fb.png">
+                    <img src="tw.png">
+                    <img src="gp.png">
+                </div>
+                
+                <form id="login"class="input-group">
+                    <input type="text" class="input-field" placeholder="Name" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="Register" class="input-group">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Middle Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                    <input type="text" class="input-field" placeholder="Course" required>
+                    
+                    <div class="search_categories">
+                        <div class="select">
+                           <select name="search_categories" id="search_categories">
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                              <option value="3">Other</option>
+                              
+                            </select>
+                         </div>
+                     </div>
+                    
+                    <input type="text" class="input-field" placeholder="Phone no." required>
+                    <input type="text" class="input-field" placeholder="Address" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" id="Enter Password" placeholder="Enter Password" minlength="8" required>
+                    <input type="password" class="input-field" id="Re-Type Password" placeholder="Re-Type Password" minlength="8" required>
+                    
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div> 
+     </div>
+     <script>
+        var x= document.getElementById("login");
+        var y= document.getElementById("Register");
+        var z= document.getElementById("btn");
+
+        function Register(){
+            x.style.left ="-400px";
+
+            y.style.left ="50px";
+            z.style.left ="110px";
+        }
+        function login(){
+            x.style.left ="50px";
+            y.style.left ="450px";
+            z.style.left ="0px";
+        }
+    </script>
+    
+</body>    
+</html>
