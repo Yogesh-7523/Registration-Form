@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\registration"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "responsive-landing-page-headphones-main"
+	}
+}
